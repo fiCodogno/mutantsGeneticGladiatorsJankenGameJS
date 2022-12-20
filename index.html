@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janken Fighting Game</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <section class="game">
+        <header>
+            <div class="player-health">
+                <div class="player-health-bar player-1-health-bar"></div>
+                <span>Player 1</span>
+            </div>
+            <div class="timer">
+                <span>60</span>
+            </div>
+            <div class="player-health">
+                <div class="player-health-bar player-2-health-bar"></div>
+                <span class="player-health-2">Player 2</span>
+            </div>
+        </header>
+        <div class="main">
+            <div class="game-feedback">
+                <span class="message"></span>
+            </div>
+            <div>
+                <span class="player player-1">❔</span>
+            </div>
+            <div class="vs-title">
+                <span>VS</span>
+            </div>
+            <div>
+                <span class="player player-2">❓</span>
+            </div>
+        </div>
+        <footer>
+            <button type="button" class="game-btn play-btn" data-option="Warrior">
+                <span>Warrior</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Robot">
+                <span>Robot</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Zombie">
+                <span>Zombie</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Beast">
+                <span>Beast</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Alien">
+                <span>Alien</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Mystic">
+                <span>Mystic</span>
+            </button>
+            <button type="button" class="game-btn reset-btn">
+                <span>Reset</span>
+            </button>
+        </footer>
+    </section>
+
+    <script src="assets/js/janken.js"></script>
+</body>
+
+</html>

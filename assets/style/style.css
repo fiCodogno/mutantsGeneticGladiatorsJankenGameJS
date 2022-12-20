@@ -1,0 +1,120 @@
+.game {
+    width: 1294px;
+    height: 565px;
+    background: url("../images/background.gif") center no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    text-transform: uppercase;
+}
+
+.game header {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    align-items: center;
+}
+
+.player-health {
+    position: relative;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.player-health-bar {
+    height: 25px;
+    background-color: forestgreen;
+}
+
+.timer {
+    background-color: red;
+    text-align: center;
+    outline: 2px solid white;
+    z-index: 100;
+    color: white;
+    font-weight: bold;
+}
+
+.player-health span {
+    position: absolute;
+    bottom: 0;
+    translate: 0 30px;
+}
+
+.player-health-2 {
+    right: 0;
+}
+
+.main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    place-items: center;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.vs-title{
+    font-size: 30px;
+}
+
+.game-feedback {
+    position: absolute;
+    top: 0;
+    translate: 0 75px;
+    transform: skewX(-25deg);
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border: 2px solid black;
+}
+
+.message {
+    display: inline-block;
+    transform: skewX(25deg);
+    font-size: 14px;
+}
+
+.player {
+    font-size: 100px;
+}
+
+.game footer {
+    display: flex;
+    gap: 25px;
+}
+
+button{
+    font-weight: bold;
+}
+
+.game-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(0 0 0 / 50%);
+    transform: skewX(-25deg);
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: background .25s;
+}
+
+.game-btn:hover {
+    color: black;
+    background: white;
+}
+
+.game-btn span {
+    display: inline-block;
+    transform: skewX(25deg);
+}
+
+.reset-btn {
+    margin-left: auto;
+}
